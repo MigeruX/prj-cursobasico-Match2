@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Match2</string>
+    <string name="btn_menu_easy">Fácil</string>
+    <string name="btn_menu_medium">Medio</string>
+    <string name="btn_menu_hard">Difícil</string>
+    <string name="appName">Match2</string>
+    <string name="description">Un sencillo juego de emparejamiento</string>
+</resources>
