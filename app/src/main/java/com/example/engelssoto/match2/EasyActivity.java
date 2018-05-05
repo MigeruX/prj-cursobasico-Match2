@@ -174,13 +174,13 @@ public class EasyActivity extends AppCompatActivity {
                 card_21.getVisibility() == View.INVISIBLE &&
                 card_22.getVisibility() == View.INVISIBLE) {
 
-            Toast.makeText(this, "CONGRATULATIONS!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.gratz, Toast.LENGTH_LONG).show();
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(EasyActivity.this);
             alertDialogBuilder
-                    .setMessage("Play Again?")
+                    .setMessage(R.string.again)
                     .setCancelable(false)
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.accept, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Intent intent = new Intent(getApplicationContext(), EasyActivity.class);
@@ -188,7 +188,7 @@ public class EasyActivity extends AppCompatActivity {
                             finish();
                         }
                     })
-                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(R.string.reject, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             finish();
