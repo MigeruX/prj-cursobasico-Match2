@@ -5,4 +5,8 @@
     <string name="btn_menu_hard">Hard</string>
     <string name="appName">Match2</string>
     <string name="description">A plain simple matching game</string>
+    <string name="gratz">CONGRATULATIONS!</string>
+    <string name="acccept">Yes</string>
+    <string name="reject">No</string>
+    <string name="again">Play again?</string>
 </resources>
