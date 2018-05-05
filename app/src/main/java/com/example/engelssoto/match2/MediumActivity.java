@@ -216,13 +216,13 @@ public class MediumActivity extends AppCompatActivity {
                 card_22.getVisibility() == View.INVISIBLE &&
                 card_23.getVisibility() == View.INVISIBLE) {
 
-            Toast.makeText(this, "CONGRATULATIONS!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.gratz, Toast.LENGTH_LONG).show();
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MediumActivity.this);
             alertDialogBuilder
-                    .setMessage("Play Again?")
+                    .setMessage(R.string.again)
                     .setCancelable(false)
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.accept, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Intent intent = new Intent(getApplicationContext(), MediumActivity.class);
@@ -230,7 +230,7 @@ public class MediumActivity extends AppCompatActivity {
                             finish();
                         }
                     })
-                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(R.string.reject, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             finish();
